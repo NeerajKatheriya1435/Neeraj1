@@ -43,7 +43,7 @@ while(i<10):
             print("You loose! Because computer chooses Water")
             c=c+1
     i=i+1
-print("You score ",n)
+print("Your score ",n)
 print("Computer score ",c)
 
 
