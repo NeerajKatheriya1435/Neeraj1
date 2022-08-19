@@ -1,0 +1,49 @@
+# write /snake water gun game in which program first tells how many chances
+# you have and in each wrong choice decreases & and then ask input for
+# s,w,g and if you win then tell how many chances you have left and
+# and print you won otherwise you loose
+
+import random
+print("Welcome to Snake,Water ,Gun game!")
+
+i=0
+
+n=0
+c=0
+while(i<10):
+    inp1 = input("Please enter your choice Snake/water/Gun : ")
+    a1 = ["Snake", "Water", "Gun"]
+    Rand1 = random.choice(a1)
+    if inp1=="Snake":
+        if Rand1=="Snake":
+            print("Same things are choosen so no one won!")
+
+        elif Rand1=="Water":
+            print("You won! Because computer chooses Water")
+            n=n+1
+        else:
+            print("You loose! Because computer chooses Gun")
+            c=c+1
+    if inp1=="Water":
+        if Rand1=="Water":
+            print("Same things are choosen so no one won!")
+        elif Rand1=="Gun":
+            print("You won! Because computer chooses Gun")
+            n=n+1
+        else:
+            print("You loose! Because computer chooses Snake")
+            c=c+1
+    if inp1=="Gun":
+        if Rand1=="Gun":
+            print("Same things are choosen so no one won!")
+        elif Rand1=="Snake":
+            print("You won! Because computer chooses Snake")
+            n=n+1
+        else:
+            print("You loose! Because computer chooses Water")
+            c=c+1
+    i=i+1
+print("You score ",n)
+print("Computer score ",c)
+
+
